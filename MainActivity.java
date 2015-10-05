@@ -21,7 +21,7 @@ import java.util.List;
 public class MainActivity extends Activity {
 
 	/**Linkto the song that's going to be played. Note the path may vary from device to device**/
-	String url="/storage/emulated/0/Music/Bowling for Soup/1985.mp3";
+	String url="/storage/emulated/0/Music/dog days are over.mp3";
 
 	/**This is the key used to initialize the HK Wireless controller**/
 	private static final String KEY = "2FA8-2FD6-C27D-47E8-A256-D011-3751-2BD6";
@@ -42,26 +42,19 @@ public class MainActivity extends Activity {
 		util.hkwireless.registerHKWirelessControllerListener(new HKWirelessListener() {
 
 			@Override
-			public void onPlayEnded() {
-
-			}
+			public void onPlayEnded() {}
 
 			@Override
-			public void onPlaybackStateChanged(int arg0) {
-			}
+			public void onPlaybackStateChanged(int arg0) {}
 
 			@Override
-			public void onPlaybackTimeChanged(int arg0) {
-			}
+			public void onPlaybackTimeChanged(int arg0) {}
 
 			@Override
-			public void onVolumeLevelChanged(long deviceId, int deviceVolume,int avgVolume) {
-			}
+			public void onVolumeLevelChanged(long deviceId, int deviceVolume,int avgVolume) {}
 
 			@Override
-			public void onDeviceStateUpdated(long deviceId, int reason) {
-
-			}
+			public void onDeviceStateUpdated(long deviceId, int reason) {}
 
 			@Override
 			public void onErrorOccurred(int errorCode, String errorMsg) {
@@ -111,8 +104,6 @@ public class MainActivity extends Activity {
 				pauseMusic();
 			}
 		});
-
-
 	}
 
 	private void pauseMusic(){
